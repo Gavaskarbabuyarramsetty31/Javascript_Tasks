@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Loop Workshop</title>
+    <link rel="stylesheet" href="loop.css">
+</head>
+
+<body>
+    <header><span>ITERATION WORKSHOP</span>
+        <h1>Loop Practice</h1>
+        <p>Use simple loops to solve these number problems.</p>
+    </header>
+    <main class="grid">
+        <div class="task easy"><b>EASY</b>
+            <h2>1 · Odd Digit Count</h2>
+            <p>Count the odd digits present in the number.</p><input id="num1" type="number"
+                placeholder="Example 58271"><button onclick="countOddDigits()">Run</button>
+            <div id="result1" class="result"></div>
+        </div>
+        <div class="task easy"><b>EASY</b>
+            <h2>2 · Factorial Using Loop</h2>
+            <p>Find the product from 1 up to the given number.</p><input id="num2" type="number"
+                placeholder="Example 6"><button onclick="productToN()">Run</button>
+            <div id="result2" class="result"></div>
+        </div>
+        <div class="task easy"><b>EASY</b>
+            <h2>3 · Number Reverse</h2>
+            <p>Reverse the entered number using a loop.</p><input id="num3" type="number"
+                placeholder="Example 4821"><button onclick="reverseNumber()">Run</button>
+            <div id="result3" class="result"></div>
+        </div>
+        <div class="task medium"><b>MEDIUM</b>
+            <h2>4 · Even Digit Total</h2>
+            <p>Add only the even digits of the number.</p><input id="num4" type="number"
+                placeholder="Example 58271"><button onclick="evenDigitSum()">Run</button>
+            <div id="result4" class="result"></div>
+        </div>
+        <div class="task medium"><b>MEDIUM</b>
+            <h2>5 · Table Program</h2>
+            <p>Print the multiplication table from 1 to 10.</p><input id="num5" type="number"
+                placeholder="Example 9"><button onclick="tableOf()">Run</button>
+            <div id="result5" class="result"></div>
+        </div>
+        <div class="task medium"><b>MEDIUM</b>
+            <h2>6 · Prime Number Count</h2>
+            <p>Count prime numbers between the two entered values.</p><input id="start6" type="number"
+                placeholder="Start"><input id="end6" type="number" placeholder="End"><button
+                onclick="countPrimes()">Run</button>
+            <div id="result6" class="result"></div>
+        </div>
+        <div class="task hard"><b>HARD</b>
+            <h2>7 · Armstrong Number</h2>
+            <p>Check whether the entered number is an Armstrong number.</p><input id="num7" type="number"
+                placeholder="Example 153"><button onclick="armstrong()">Run</button>
+            <div id="result7" class="result"></div>
+        </div>
+        <div class="task hard"><b>HARD</b>
+            <h2>8 · Fibonacci Series</h2>
+            <p>Print Fibonacci numbers until the entered limit.</p><input id="num8" type="number"
+                placeholder="Example 100"><button onclick="fibonacci()">Run</button>
+            <div id="result8" class="result"></div>
+        </div>
+    </main>
+    <script src="loops.js"></script>
+</body>
+
+</html>

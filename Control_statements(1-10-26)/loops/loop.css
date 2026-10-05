@@ -1,0 +1,61 @@
+body {
+  background-color: #e8e8e8;
+  font-family: Arial, sans-serif;
+  margin: 18px;
+}
+h1 {
+  text-align: center;
+}
+header {
+  margin: 10px 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #ddd;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+  padding: 10px;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+  padding: 10px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+  padding: 10px;
+}
+.task,
+.card,
+.task-card,
+.box {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 14px;
+  background-color: #f8f8f8;
+}
+input {
+  height: 24px;
+}
+button {
+  height: 28px;
+  background-color: #bfc7d1;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.result {
+  display: none;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: white;
+}
+

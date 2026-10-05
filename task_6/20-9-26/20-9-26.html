@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Browser Engine Map</title>
+    <style>
+        body {
+            background-color: #e8e8e8;
+            font-family: Arial, sans-serif;
+            margin: 18px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        header {
+            margin: 10px 5px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #ddd;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .task,
+        .card,
+        .task-card,
+        .box {
+            border: 1px solid black;
+            margin: 8px;
+            padding: 14px;
+            background-color: #f8f8f8;
+        }
+
+        input {
+            height: 24px;
+        }
+
+        button {
+            height: 28px;
+            background-color: #bfc7d1;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+
+        .result {
+            display: none;
+            border: 1px solid black;
+            padding: 5px;
+            background-color: white;
+        }
+
+        @media(max-width:750px) {
+
+            .grid,
+            .container,
+            .wrap,
+            .board {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:500px) {
+
+            .grid,
+            .container,
+            .wrap,
+            .board {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap"><small>BROWSER TECHNOLOGY NOTES</small>
+        <h1>Browser Engine Map</h1>
+        <p>Common browsers and the JavaScript engines behind them.</p>
+        <div class="table">
+            <div class="row head">
+                <div>Browser</div>
+                <div>JavaScript engine</div>
+                <div>Notes</div>
+            </div>
+            <div class="row">
+                <div>Chrome</div>
+                <div>V8</div>
+                <div>Chromium family</div>
+            </div>
+            <div class="row">
+                <div>Edge</div>
+                <div>V8</div>
+                <div>Chromium-based</div>
+            </div>
+            <div class="row">
+                <div>Firefox</div>
+                <div>SpiderMonkey</div>
+                <div>Mozilla engine</div>
+            </div>
+            <div class="row">
+                <div>Safari</div>
+                <div>JavaScriptCore</div>
+                <div>WebKit</div>
+            </div>
+            <div class="row">
+                <div>Opera</div>
+                <div>V8</div>
+                <div>Chromium-based</div>
+            </div>
+            <div class="row">
+                <div>Brave</div>
+                <div>V8</div>
+                <div>Chromium-based</div>
+            </div>
+            <div class="row">
+                <div>Samsung Internet</div>
+                <div>V8</div>
+                <div>Chromium-based</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

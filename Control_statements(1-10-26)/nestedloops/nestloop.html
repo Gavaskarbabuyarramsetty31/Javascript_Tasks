@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nested Loop Practice</title>
+    <link rel="stylesheet" href="nestloop.css">
+</head>
+
+<body>
+    <header><span>DOUBLE ITERATION</span>
+        <h1>Nested Loop Practice</h1>
+        <p>Problems where one loop is used inside another.</p>
+    </header>
+    <main class="container">
+        <div class="task-card medium"><i>MEDIUM</i>
+            <h2>1 · Prime Pairs</h2>
+            <p>Count the pairs of prime numbers in the range.</p><input id="input1Start" type="number"
+                placeholder="Start"><input id="input1End" type="number" placeholder="End"><button
+                onclick="primePairs()">Solve</button>
+            <div id="output1" class="result"></div>
+        </div>
+        <div class="task-card medium"><i>MEDIUM</i>
+            <h2>2 · Divisor Total</h2>
+            <p>Compare the sum of proper divisors for each number.</p><input id="input2Start" type="number"
+                placeholder="Start"><input id="input2End" type="number" placeholder="End"><button
+                onclick="largestDivisorSum()">Solve</button>
+            <div id="output2" class="result"></div>
+        </div>
+        <div class="task-card hard"><i>HARD</i>
+            <h2>3 · Three Divisors</h2>
+            <p>Find numbers which have exactly three factors.</p><input id="input3Start" type="number"
+                placeholder="Start"><input id="input3End" type="number" placeholder="End"><button
+                onclick="threeDivisors()">Solve</button>
+            <div id="output3" class="result"></div>
+        </div>
+        <div class="task-card hard"><i>HARD</i>
+            <h2>4 · GCD by Loop</h2>
+            <p>Find the greatest common divisor by checking factors.</p><input id="input4Start" type="number"
+                placeholder="First number"><input id="input4End" type="number" placeholder="Second number"><button
+                onclick="commonFactors()">Solve</button>
+            <div id="output4" class="result"></div>
+        </div>
+        <div class="task-card hard"><i>HARD</i>
+            <h2>5 · Prime Factors</h2>
+            <p>Print the prime factors of the given number.</p><input id="input5Start" type="number"
+                placeholder="Example 180"><button onclick="primeFactors()">Solve</button>
+            <div id="output5" class="result"></div>
+        </div>
+    </main>
+    <script src="nestedloops.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Unary Operator Lab</title>
+    <style>
+        body {
+            background-color: #eee8dc;
+            font-family: Arial, sans-serif;
+            margin: 15px;
+        }
+
+        h1 {
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        header {
+            border-bottom: 1px solid black;
+            padding: 5px 10px;
+            margin-bottom: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .task,
+        .card,
+        .task-card,
+        .box {
+            border: 1px solid #555;
+            padding: 15px;
+            background-color: #fff;
+            margin: 5px;
+            min-height: 190px;
+        }
+
+        input {
+            height: 24px;
+            padding-left: 6px;
+        }
+
+        button {
+            height: 28px;
+            background-color: #c9d8df;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .result {
+            display: none;
+            border: 1px solid black;
+            padding: 5px;
+            background-color: #f7f7f7;
+        }
+
+        @media(max-width:600px) {
+
+            .grid,
+            .container,
+            .wrap,
+            .board {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap"><small>UNARY OPERATORS</small>
+        <h1>Pre/Post Increment & Decrement</h1>
+        <p>Compare when the variable changes and when its value is returned.</p>
+        <div class="table">
+            <div class="row head">
+                <div>Expression</div>
+                <div>Before</div>
+                <div>Returned</div>
+                <div>After</div>
+                <div>Reason</div>
+            </div>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script>const cases = [["a++", 7, 7, 8, "Post-increment returns the old value."], ["++a", 7, 8, 8, "Pre-increment changes the value first."], ["a--", 7, 7, 6, "Post-decrement returns the old value."], ["--a", 7, 6, 6, "Pre-decrement changes the value first."]]; document.getElementById("result").innerHTML = cases.map(c => `<div class="row"><div>${c[0]}</div><div>${c[1]}</div><div>${c[2]}</div><div>${c[3]}</div><div class="note">${c[4]}</div></div>`).join("");</script>
+</body>
+
+</html>

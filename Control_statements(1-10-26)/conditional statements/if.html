@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If Statement Practice | JavaScript</title>
+  <link rel="stylesheet" href="if.css">
+</head>
+
+<body>
+  <header class="header">
+    <span class="label">JAVASCRIPT PRACTICE · 01 OCT 2026</span>
+    <h1>If Statement Practice</h1>
+    <p>Simple decisions using if, if-else and else-if.</p>
+  </header>
+  <main class="board">
+    <section class="card easy">
+      <div class="tag">EASY</div>
+      <h2>1 · Two Digit Number</h2>
+      <p>Check if the entered number is between 10 and 99.</p>
+      <input id="number" type="number" placeholder="Try 48"><button onclick="checkNumber()">Run</button>
+      <div id="result1" class="result"></div>
+    </section>
+    <section class="card easy">
+      <div class="tag">EASY</div>
+      <h2>2 · Day Check</h2>
+      <p>Enter a day number and check whether it is a weekend.</p>
+      <input id="number1" type="number" placeholder="Try 6"><button onclick="checkWeekend()">Run</button>
+      <div id="result2" class="result"></div>
+    </section>
+    <section class="card easy">
+      <div class="tag">EASY</div>
+      <h2>3 · Number Check</h2>
+      <p>Check whether the number can be divided by 7.</p>
+      <input id="number2" type="number" placeholder="Try 35"><button onclick="checkMultiple7()">Run</button>
+      <div id="result3" class="result"></div>
+    </section>
+    <section class="card medium">
+      <div class="tag">MEDIUM</div>
+      <h2>4 · Rectangle Check</h2>
+      <p>Check that both rectangle values are positive.</p>
+      <input id="length" type="number" placeholder="Length"><input id="width" type="number" placeholder="Width"><button
+        onclick="checkRectangle()">Run</button>
+      <div id="result4" class="result"></div>
+    </section>
+   
+    <section class="card medium">
+      <div class="tag">MEDIUM</div>
+      <h2>6 · Delivery Cost</h2>
+      <p>Calculate the delivery charge from the order amount.</p>
+      <input id="order" type="number" placeholder="Order value"><button onclick="deliveryCharge()">Calculate</button>
+      <div id="result6" class="result"></div>
+    </section>
+    <section class="card hard">
+      <div class="tag">HARD</div>
+      <h2>7 · Scholarship Check</h2>
+      <p>Check eligibility using marks and attendance.</p>
+      <input id="marks" type="number" placeholder="Marks"><input id="attendance" type="number"
+        placeholder="Attendance %"><button onclick="checkScholarship()">Run</button>
+      <div id="result7" class="result"></div>
+    </section>
+    <section class="card hard">
+      <div class="tag">HARD</div>
+      <h2>8 · Parking Amount</h2>
+      <p>Calculate the parking amount from the number of hours.</p>
+      <input id="hours" type="number" placeholder="Hours parked"><button onclick="parkingFee()">Calculate</button>
+      <div id="result8" class="result"></div>
+    </section>
+  </main>
+  <script src="if.js"></script>
+</body>
+
+</html>

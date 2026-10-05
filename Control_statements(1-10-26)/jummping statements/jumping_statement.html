@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Break and Continue</title>
+    <link rel="stylesheet" href="jumping_statement.css">
+</head>
+
+<body>
+    <header><span>BREAK · CONTINUE</span>
+        <h1>Break and Continue</h1>
+        <p>Practice break and continue inside loops.</p>
+    </header>
+    <main class="wrap">
+        <div class="task easy"><b>EASY</b>
+            <p>Stop when the first multiple of 8 is found.</p><input id="start1" type="number"
+                placeholder="Start"><input id="end1" type="number" placeholder="End"><button
+                onclick="firstMultiple8()">Find</button>
+            <div id="result1" class="result"></div>
+        </div>
+        <div class="task easy"><b>EASY</b>
+            <p>Find the final value divisible by 4 in the range.</p><input id="start2" type="number"
+                placeholder="Start"><input id="end2" type="number" placeholder="End"><button
+                onclick="lastMultiple4()">Find</button>
+            <div id="result2" class="result"></div>
+        </div>
+        <div class="task medium"><b>MEDIUM</b>
+            <p>Print five values and then stop the loop using <code>break</code>.</p><input id="start3" type="number"
+                placeholder="Start"><input id="end3" type="number" placeholder="End"><button
+                onclick="firstFive()">Run</button>
+            <div id="result3" class="result"></div>
+        </div>
+        <div class="task medium"><b>MEDIUM</b>
+            <p>Check digits from the right and stop when a digit above 6 is found.</p><input id="number1" type="number"
+                placeholder="Example 245789"><button onclick="firstDigitAbove6()">Run</button>
+            <div id="result4" class="result"></div>
+        </div>
+        <div class="task medium"><b>MEDIUM</b>
+            <p>Use <code>continue</code> to leave out the digit 5.</p><input id="number2" type="number"
+                placeholder="Example 155263"><button onclick="skipFives()">Run</button>
+            <div id="result5" class="result"></div>
+        </div>
+        <div class="task hard"><b>HARD</b>
+            <p>Print numbers up to N but skip multiples of 3.</p><input id="number3" type="number"
+                placeholder="N"><button onclick="skipMultiples3()">Run</button>
+            <div id="result6" class="result"></div>
+        </div>
+        <div class="task hard"><b>HARD</b>
+            <p>Stop at the first value divisible by both 6 and 9.</p><input id="start4" type="number"
+                placeholder="Start"><input id="end4" type="number" placeholder="End"><button
+                onclick="firstCommonMultiple()">Find</button>
+            <div id="result7" class="result"></div>
+        </div>
+    </main>
+    <script src="jumping_statement.js"></script>
+</body>
+
+</html>

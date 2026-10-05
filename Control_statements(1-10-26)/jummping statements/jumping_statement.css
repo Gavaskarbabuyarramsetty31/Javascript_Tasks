@@ -1,0 +1,53 @@
+body {
+  background-color: #e5e0eb;
+  font-family: Arial, sans-serif;
+  margin: 25px;
+}
+h1 {
+  text-align: center;
+}
+header {
+  margin-bottom: 15px;
+}
+.grid,
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+.wrap,
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5px;
+}
+.task,
+.card,
+.task-card,
+.box {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  min-height: 210px;
+}
+input {
+  height: 23px;
+  padding-left: 5px;
+}
+button {
+  height: 27px;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+p {
+  color: #222;
+}
+.result {
+  display: none;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: white;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f3ff;
+            padding: 20px;
+        }
+
+        .container {
+            width: 700px;
+            margin: auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #c4b5fd;
+            border-radius: 10px;
+            box-shadow: 0px 3px 8px #ddd;
+        }
+
+        h1 {
+            color: #6b21a8;
+            font-size: 22px;
+            border-bottom: 2px solid #c4b5fd;
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-size: 17px;
+            margin: 10px 0;
+        }
+
+        .result {
+            color: #2563eb;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Arithmetic Operator -->
+        <div class="box">
+            <h1>Arithmetic Operators</h1>
+
+            <p>Addition : <span class="result" id="addition"></span></p>
+            <p>Subtraction : <span class="result" id="subtraction"></span></p>
+            <p>Multiplication : <span class="result" id="multiplication"></span></p>
+            <p>Division : <span class="result" id="division"></span></p>
+            <p>Modulus : <span class="result" id="modulus"></span></p>
+            <p>Exponentiation : <span class="result" id="exponentiation"></span></p>
+        </div>
+
+        <!-- Relational Operator -->
+        <div class="box">
+            <h1>Relational Operators</h1>
+
+            <p>Strict Equality : <span class="result" id="strict"></span></p>
+            <p>Equality : <span class="result" id="equal"></span></p>
+            <p>Not Equality : <span class="result" id="notEqual"></span></p>
+            <p>Less Than : <span class="result" id="less"></span></p>
+            <p>Less Than or Equal : <span class="result" id="lessEqual"></span></p>
+            <p>Greater Than : <span class="result" id="greater"></span></p>
+            <p>Greater Than or Equal : <span class="result" id="greaterEqual"></span></p>
+        </div>
+
+        <!-- Logical Operator -->
+        <div class="box">
+            <h1>Logical Operators</h1>
+
+            <p>Logical AND : <span class="result" id="and"></span></p>
+            <p>Logical OR : <span class="result" id="or"></span></p>
+            <p>Logical NOT : <span class="result" id="not"></span></p>
+        </div>
+
+        <!-- Assignment Operator -->
+        <div class="box">
+            <h1>Assignment Operators</h1>
+
+            <p>Assign : <span class="result" id="assign"></span></p>
+            <p>Add and Assign : <span class="result" id="addAssign"></span></p>
+            <p>Subtract and Assign : <span class="result" id="subAssign"></span></p>
+            <p>Multiply and Assign : <span class="result" id="mulAssign"></span></p>
+            <p>Division and Assign : <span class="result" id="divAssign"></span></p>
+            <p>Modulus and Assign : <span class="result" id="modAssign"></span></p>
+            <p>Exponentiation and Assign : <span class="result" id="expAssign"></span></p>
+        </div>
+
+        <!-- Bitwise Operator -->
+        <div class="box">
+            <h1>Bitwise Operators</h1>
+
+            <p>Bitwise AND : <span class="result" id="bitAnd"></span></p>
+            <p>Bitwise OR : <span class="result" id="bitOr"></span></p>
+            <p>Bitwise XOR : <span class="result" id="bitXor"></span></p>
+            <p>Bitwise NOT : <span class="result" id="bitNot"></span></p>
+            <p>Right Shift : <span class="result" id="rightShift"></span></p>
+            <p>Left Shift : <span class="result" id="leftShift"></span></p>
+        </div>
+
+    </div>
+
+    <script>
+
+        // Arithmetic Operator
+
+        var a = 4;
+        var b = 2;
+
+        document.getElementById("addition").innerHTML = a + b;
+        document.getElementById("subtraction").innerHTML = a - b;
+        document.getElementById("multiplication").innerHTML = a * b;
+        document.getElementById("division").innerHTML = a / b;
+        document.getElementById("modulus").innerHTML = a % b;
+        document.getElementById("exponentiation").innerHTML = a ** b;
+
+
+        // Relational Operator
+
+        var a = 10;
+        var b = 20;
+
+        document.getElementById("strict").innerHTML = a === b;
+        document.getElementById("equal").innerHTML = a == b;
+        document.getElementById("notEqual").innerHTML = a != b;
+        document.getElementById("less").innerHTML = a < b;
+        document.getElementById("lessEqual").innerHTML = a <= b;
+        document.getElementById("greater").innerHTML = a > b;
+        document.getElementById("greaterEqual").innerHTML = a >= b;
+
+
+        // Logical Operator
+
+        var a = 2;
+        var b = 4;
+
+        document.getElementById("and").innerHTML = a == 2 && b == 4;
+        document.getElementById("or").innerHTML = a == 1 || b == 3;
+        document.getElementById("not").innerHTML = !(a == b);
+
+
+        // Assignment Operator
+
+        var a = 10;
+        var b = 10;
+
+        document.getElementById("assign").innerHTML = a = b;
+        document.getElementById("addAssign").innerHTML = a += b;
+        document.getElementById("subAssign").innerHTML = a -= b;
+        document.getElementById("mulAssign").innerHTML = a *= b;
+        document.getElementById("divAssign").innerHTML = a /= b;
+        document.getElementById("modAssign").innerHTML = a %= b;
+        document.getElementById("expAssign").innerHTML = a **= b;
+
+
+        // Bitwise Operator
+
+        var a = 4;
+        var b = 2;
+
+        document.getElementById("bitAnd").innerHTML = a & b;
+        document.getElementById("bitOr").innerHTML = a | b;
+        document.getElementById("bitXor").innerHTML = a ^ b;
+        document.getElementById("bitNot").innerHTML = ~a;
+        document.getElementById("rightShift").innerHTML = a >> b;
+        document.getElementById("leftShift").innerHTML = a << b;
+
+    </script>
+
+</body>
+</html>
